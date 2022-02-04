@@ -1,0 +1,9 @@
+@media only screen and (max-width: 300px){
+    nav{
+        width: 2rem;
+    }
+
+    .container {
+        width: calc(( 100% - 2rem ) - 5px);
+    }
+}
