@@ -4,6 +4,6 @@
     }
 
     .container {
-        width: calc(( 100% - 2rem ) - 5px);
+        width: calc( 100% - 2rem );
     }
 }
