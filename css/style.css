@@ -13,12 +13,21 @@ body{
 
 ul {
     margin: 0;
+    padding: 0;
     list-style: none;
 }
 
 li {
     margin: 0;
+    padding: 0;
     list-style: none;
+    margin-top: 0.5rem;
+}
+
+hr{
+    font-size:0.5rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
 
 
@@ -33,9 +42,19 @@ nav{
     font-size: 1rem;
 }
 
+nav section {
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
 nav a{
     color: #6b6b6b;
     text-decoration: none;
+}
+
+#acaunt {
+    position: relative;
+    top: 80%;
 }
 
 #profile {
