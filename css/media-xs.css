@@ -1,15 +1,59 @@
-@media only screen and (max-width: 300px){
+@media only screen and (max-width: 500px){
     nav{
-        width: 2rem;
+        width: 3rem;
         overflow: hidden;
     }
 
+    .logo-piccolo {
+        display: inline-block;
+        width: 2rem;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .log {
+        width: 20px;
+    }
+    
+    .icona {
+        width: 2rem;
+    }
+
+    .logo-grande {
+        display: none;
+    }
+
+    #lef-gray {
+        border-left: 0;
+    }
+
+    nav section{
+        margin-left: 0;
+        margin-top: 0;
+    }
+
     .container {
-        width: calc( 100% - 2rem );
+        width: calc( 100% - 3rem );
     }
 
     .delete{
         visibility: hidden;
     }
 
+    #acaunt i{
+        margin-left: 10px;
+    }
+
+    nav span{
+        display: none;
+    }
+
+    nav hr{
+        visibility: hidden;
+    }
+
+    #acaunt {
+        justify-self: center;
+        text-align: center;
+    }
 }

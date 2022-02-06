@@ -45,7 +45,6 @@ nav{
     color: white;
 }
 
-
 nav section {
     margin-top: 1rem;
     margin-left: 10px;
@@ -88,6 +87,10 @@ nav a{
 #acaunt {
     justify-self: flex-end;
     flex-shrink: 0;
+}
+
+.logo-piccolo {
+    display: none;
 }
 
 /*altro*/
