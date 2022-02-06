@@ -56,4 +56,10 @@
         justify-self: center;
         text-align: center;
     }
+
+    .container li{ 
+        flex-basis: 40vw;
+        min-width: 10rem;
+    }
+
 }

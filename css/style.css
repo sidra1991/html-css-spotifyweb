@@ -60,6 +60,10 @@ nav section {
     flex-shrink: 1;
 }
 
+.margin-top {
+    margin-top: 2rem;
+}
+
 nav a{
     color: #6b6b6b;
     text-decoration: none;
@@ -86,6 +90,10 @@ nav a{
     border-radius: 50%;
     position: relative;
     top: 3px;
+}
+
+strong {
+    color: white;
 }
 
 #acaunt {
@@ -121,6 +129,8 @@ header a {
     border-radius: 25px;
     border: 1px solid white;
     padding: 0.5em;
+    position: relative;
+    z-index: 2;
 }
 
 /*main*/
@@ -129,20 +139,28 @@ main {
     width: 100%;
     height: calc( 100% - 5rem ) ;
     background-color: #141922;
+    overflow: auto;
 }
 
 .voci-correlate{
     display: flex;
     justify-content: center;
     text-align: center;
+    flex-wrap: wrap;
+}
+
+.voci-correlate li{
+    flex-shrink: 0;
 }
 
 .compilation{
     display: flex;
+    flex-wrap: nowrap;
 }
 
 .compilation li {
-    width: 13vw;    
+    flex-basis: 13vw;
+    min-width: 8rem;  
 }
 
 main li{
