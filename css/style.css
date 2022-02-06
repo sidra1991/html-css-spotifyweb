@@ -23,7 +23,7 @@ li {
     margin: 0;
     padding: 0;
     list-style: none;
-    margin-top: 0.5rem;
+
     padding-left: 10px;
 }
 
@@ -43,6 +43,10 @@ nav{
     height: calc( 100vh - 70px );
     background-color: black;
     color: white;
+}
+
+nav li {
+    margin-top: 0.5rem;
 }
 
 nav section {
@@ -119,13 +123,31 @@ header a {
     padding: 0.5em;
 }
 
-/*altro*/
+/*main*/
 
 main {
     width: 100%;
     height: calc( 100% - 5rem ) ;
     background-color: #141922;
 }
+
+.voci-correlate{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+main li{
+    display: inline-block;
+}
+
+main a {
+    color: #6b6b6b;
+    text-decoration: none;
+    padding: 0.5em;
+}
+
+/*footer*/
 
 footer{
     position: relative;
