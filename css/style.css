@@ -55,7 +55,7 @@ nav section {
 }
 
 .delete {
-    flex-basis: 54vh;
+    flex-basis: 66vh;
     overflow: auto;
     flex-shrink: 1;
 }
@@ -137,14 +137,43 @@ main {
     text-align: center;
 }
 
+.compilation{
+    display: flex;
+}
+
+.compilation li {
+    width: 13vw;    
+}
+
 main li{
+    margin-top: 0.5rem;
     display: inline-block;
+    text-align: center;
 }
 
 main a {
     color: #6b6b6b;
     text-decoration: none;
     padding: 0.5em;
+}
+
+a em {
+    margin-bottom: 0.5rem;
+    border-bottom: 2px solid #96dd28 ;
+}
+
+main h1,
+main h2,
+main h3 {
+    color:white;
+}
+
+main h4{
+    color: #808080;
+}
+
+main img {
+    width: 100%;
 }
 
 /*footer*/
