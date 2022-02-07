@@ -8,4 +8,12 @@
         display: block;
     }
 
+    .descri h3,
+    .descri h4 {
+        font-size: 0.5em;
+    }
+    
+    .volum input {
+        width: 50%;
+    }
 }
