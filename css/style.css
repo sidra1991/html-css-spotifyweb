@@ -55,7 +55,7 @@ nav{
 }
 
 .container {
-    flex:1 0 0;
+    flex:1 1 0;
     height: calc( 100% - 70px );
 }
 
@@ -183,12 +183,16 @@ strong {
 
 .compilation{
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap; 
 }
 
-.compilation li {
-    flex-basis: 13vw;
-    min-width: 8rem;  
+.card {
+    position: relative;
+    display: inline-block;
+    flex: 1 1 ;
+    max-width: 280px;
+    min-width: 170PX;
+    text-align: center;
 }
 
 .voci-correlate li{
@@ -228,8 +232,28 @@ main h4{
     color: #808080;
 }
 
-main img {
+.immagine {
+    position: relative;
+    display: inline-block;
+    width: 90%;
+    min-width: 170px;
+}
+
+.card img {
     width: 100%;
+}
+
+.ghost i {
+    color: white;
+    position: absolute;
+    top : 25%;
+    left : 30%;
+    font-size: 6rem;
+    z-index: -1;
+}
+
+img:hover{
+    z-index: -2;
 }
 
 
@@ -320,6 +344,11 @@ footer ul {
     padding: 5px;
 }
 
+.media i:hover,
+.volum i:hover {
+    color: #96dd28;
+}
+
 footer a {
     color: white;
 }
@@ -327,6 +356,7 @@ footer a {
 .time-line {
     display: inline-block;
     width: 60%;
+    min-width: 50px;
     background-color: #5a5a5a  ;
     height: 8px;
     border-radius: 10px;
@@ -339,6 +369,96 @@ footer a {
     background-color: #c1c1c1;
 }
 
+.circle:hover {
+    background-color: #96dd28;
+}
+
 .volume{
     width: 50%;
+}
+
+
+/****************/
+/*    media     */
+/****************/
+
+@media only screen and (max-width: 1000px){
+    .descri i {
+        display: block;
+    }
+
+    .descri h3,
+    .descri h4 {
+        font-size: 0.5em;
+    }
+    
+    .volum input {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 576px){
+    nav{
+        width: 3rem;
+        overflow: hidden;
+    }
+
+    .logo-piccolo {
+        display: inline-block;
+        width: 2rem;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    .log {
+        width: 20px;
+    }
+    
+    .icona {
+        width: 2rem;
+    }
+
+    .logo-big {
+        display: none;
+    }
+
+    #lef-gray {
+        border-left: 0;
+    }
+
+    nav section{
+        margin-left: 0;
+        margin-top: 0;
+    }
+
+    .container {
+        width: calc( 100% - 3rem );
+    }
+
+    .delete{
+        visibility: hidden;
+    }
+
+    #acaunt i{
+        margin-left: 10px;
+    }
+
+    nav span{
+        display: none;
+    }
+
+    nav hr{
+        visibility: hidden;
+    }
+
+    #acaunt {
+        justify-self: center;
+        text-align: center;
+    }
+
+    .container li{ 
+        flex-basis: 40vw;
+        min-width: 10rem;
+    }
+
 }
