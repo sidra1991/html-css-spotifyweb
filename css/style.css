@@ -200,6 +200,12 @@ main img {
 
 /*footer*/
 
+
+.logo-grande {
+    width: 100px;
+    margin-left: 10px;
+}
+
 footer{
     display: flex;
     justify-content: space-between;
@@ -208,30 +214,135 @@ footer{
     height: 70px;
     background-color: #282828 ;
     z-index: 1;
-    color: white;
-    font-size: 0.5em;
     align-items: center;
 }
+
+
+.descri {
+    background-color: #96dd28;
+    flex-basis: 240px;
+    height: 3rem;
+    color: #6b6b6b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.media {
+    background-color: aqua;
+    flex-basis:960px;
+    height: 3rem;
+}
+
+.volum {
+    background-color: brown;
+    flex-basis: 480px;
+    height: 3rem;
+}
+
 
 h4 {
     color: #808080;
 }
 
-footer i{
-    width: 1rem;
+.descri h3 {
+    color: white;
+}
+
+footer li{
+    display: inline-block;
+    background-color: brown;
 }
 
 footer img{
     width: 50px;
 }
 
+.descri ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+/*
+footer i{
+    font-size: 1rem;
+    padding-right: 0.5rem;
+    color: #6b6b6b;
+}
+
+
+
+
+
 .logo-grande {
     width: 100px;
     margin-left: 10px;
 }
 
-footer ul {
-    display: flex;
-    align-items: center;
+.media {
+    flex-basis: 60rem;
+    flex-shrink: 1;
+    min-width: 10rem;
+    text-align: center;
+    flex-shrink: 1;
+    min-width: 5rem;
+    background-color: aqua;
+}
 
+#play {
+    font-size: 4em;
+
+}
+
+.media i{
+    color: #808080;
+}
+
+#time-line {
+    width: 40vw;
+}
+
+.media li {
+    display: inline-block;
+}
+
+.media a,
+.volum a {
+    padding: 5px;
+}
+
+.media i,
+.volum i{
+    color: white;
+}
+
+.volum li{
+    display: inline-block;
+}
+
+.volum {
+    background-color: #96dd28;
+    flex-basis: 20rem;
+    height: 3rem;
+    line-height: 3rem;
+    align-items: center;
+}
+
+.not-alone{
+    display: flex;
+    flex-wrap: nowrap; 
+    justify-content: center;
+    align-items: center;
+}
+
+.volum input {
+    width: 10vw;
+}
+
+footer input {
+    background-color: #6b6b6b;
+    color: white;
 }
