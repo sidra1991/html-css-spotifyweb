@@ -1,3 +1,7 @@
+/****************/
+/* common parts */
+/****************/
+
 *{
     margin: 0;
 }
@@ -37,9 +41,11 @@ hr{
     margin-top: .5rem;
 }
 
-/* nav di sinistra */
+/*******************/
+/* layout structure*/
+/*******************/
+
 nav{
-    margin: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -48,6 +54,70 @@ nav{
     background-color: black;
     color: white;
 }
+
+.container {
+    flex:1 0 0;
+}
+
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 70px;
+    background-color: #282828 ;
+    z-index: 1;
+    align-items: center;
+}
+
+/*******************/
+/*   layout main   */
+/*******************/
+
+header {
+    width: 100%;
+    height: 5rem;
+    background-color: #080b12;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+main {
+    width: 100%;
+    background-color: #141922;
+    overflow: auto;
+    height: calc( 100% - 70px );
+}
+
+/******************/
+/* header to main */
+/*******************/
+
+#btn1 {
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    border: 1px solid white;
+    padding: 0.5em;
+    padding-left: 20px;
+    padding-right: 20px;
+    position: relative;
+    z-index: 2;
+}
+
+/****************/
+/* nav left     */
+/****************/
+
+
+
+
+
+
+
+
 
 nav li {
     margin-top: 0.5rem;
@@ -73,11 +143,7 @@ nav a{
     text-decoration: none;
 }
 
-#btn1 {
-    background-color: #a3a3a3;
-    border: none;
-    font-size: 1.5em;
-}
+
 
 #lef-gray {
     border-left:2px solid #96dd28 ;
@@ -109,42 +175,13 @@ strong {
     display: none;
 }
 
-/*header*/
 
-.container {
-    margin: 0;
-    display: inline-block;
-    width: calc( 100% - 15rem );
-    height: calc( 100vh - 70px );
-}
 
-header {
-    width: 100%;
-    height: 5rem;
-    background-color: #080b12;
-    display: flex;
-    justify-content: end;
-    align-items: center;
-}
 
-header a {
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    border: 1px solid white;
-    padding: 0.5em;
-    position: relative;
-    z-index: 2;
-}
 
-/*main*/
 
-main {
-    width: 100%;
-    height: calc( 100% - 5rem ) ;
-    background-color: #141922;
-    overflow: auto;
-}
+
+
 
 .voci-correlate{
     display: flex;
@@ -166,6 +203,14 @@ main {
     flex-basis: 13vw;
     min-width: 8rem;  
 }
+
+
+
+/****************/
+/* nav left     */
+/****************/
+
+/*
 
 main li{
     margin-top: 0.5rem;
@@ -198,24 +243,12 @@ main img {
     width: 100%;
 }
 
-/*footer*/
-
 
 .logo-grande {
     width: 100px;
     margin-left: 10px;
 }
 
-footer{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
-    width: 100%;
-    height: 70px;
-    background-color: #282828 ;
-    z-index: 1;
-    align-items: center;
-}
 
 .descri i {
     padding-right: 10px;
