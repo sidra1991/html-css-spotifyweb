@@ -199,10 +199,12 @@ strong {
     flex: 1 1 200px;
     margin: 0.5vw 0.5vh;
     padding: 0;
+    height: 23rem;
 }
 
 .img-container {
     flex: 1 1 0;
+    max-height: 70% ;
 }
 
 .ghost {
