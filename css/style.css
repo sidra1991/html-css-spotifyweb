@@ -178,6 +178,7 @@ strong {
 }
 
 #acaunt {
+    margin-bottom: 80px;
     justify-self: flex-end;
     flex-shrink: 0;
 }
@@ -286,6 +287,19 @@ main h4{
 /*   footer     */
 /****************/
 
+.honor:hover{
+    color: white;
+} 
+
+.sottolineato{
+    text-decoration: none;
+}
+
+.sottolineato:hover {
+    color: white;
+    text-decoration: underline;
+}
+
 .descri i {
     padding-right: 10px;
 }
@@ -388,13 +402,16 @@ footer a {
 }
 
 .circle {
+    display: flex;
+    justify-content: end;
+    align-items: center;
     width: 25%;
     height: 100%;
     border-radius: 10px;
     background-color: #c1c1c1;
 }
 
-.circle:hover {
+.timeline:hover .circle{
     background-color: #96dd28;
 }
 
@@ -402,12 +419,27 @@ footer a {
     width: 50%;
 }
 
+.minicircle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #96dd28;
+    opacity: 0;
+
+}
+
+.timeline:hover .minicircle {
+    opacity: 1;
+}
+
 
 
 /****************/
 /*    media     */
 /****************/
-/*
+
+
 @media only screen and (max-width: 1000px){
     .descri i {
         display: block;
@@ -423,7 +455,7 @@ footer a {
     }
 }
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 650px){
     nav{
         width: 3rem;
         overflow: hidden;
@@ -487,4 +519,15 @@ footer a {
         min-width: 10rem;
     }
 
+    .upline{
+        min-width: 180px;
+    }
+
+    .timeline span{
+        display: none;
+    }
+
+    .tit {
+        display: none;
+    }
 }
