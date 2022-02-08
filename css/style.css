@@ -49,23 +49,23 @@ nav{
     display: flex;
     flex-direction: column;
     width: 15rem;
-    height: calc( 100vh - 70px );
     background-color: black;
     color: white;
+    height: 100vh
 }
 
 .container {
     flex:1 1 0;
-    height: calc( 100% - 70px );
+    background-color: antiquewhite;
 }
-
 
 footer{
     display: flex;
     justify-content: space-between;
-    position: relative;
+    position: fixed;
+    bottom: 0;
     width: 100%;
-    height: 70px;
+    height: 80px;
     background-color: #282828 ;
     z-index: 1;
     align-items: center;
@@ -74,7 +74,7 @@ footer{
 /*******************/
 /*   layout main   */
 /*******************/
-
+/*
 header {
     width: 100%;
     height: 5rem;
@@ -88,12 +88,13 @@ main {
     width: 100%;
     background-color: #141922;
     overflow: auto;
-    height: calc( ( 100vh - 5rem ) - 70px);
+    height:100%;
 }
 
 /******************/
 /* header to main */
 /*******************/
+/*
 
 #btn1 {
     color: white;
@@ -127,7 +128,7 @@ nav section {
 }
 
 .delete {
-    flex-basis: 66vh;
+    flex-basis: 62%;
     overflow: auto;
     flex-shrink: 1;
 }
@@ -180,7 +181,7 @@ strong {
 /****************/
 /*     main     */
 /****************/
-
+/*
 .compilation {
     width: 100%;
 }
@@ -213,7 +214,6 @@ strong {
     width: 100%;
     height:100% ;
     top: -100% ;
-    background-color: rgba(0, 0, 0, 0.5);
 }
 
 .riproduci {
@@ -227,6 +227,10 @@ strong {
 
 .card:hover .ghost{
     opacity: 1;
+}
+
+.card:hover img{
+    filter: grayscale(100%);
 }
 
 .card img {
@@ -272,7 +276,7 @@ main h4{
 /****************/
 /*   footer     */
 /****************/
-
+/*
 .descri i {
     padding-right: 10px;
 }
@@ -390,10 +394,11 @@ footer a {
 }
 
 
+
 /****************/
 /*    media     */
 /****************/
-
+/*
 @media only screen and (max-width: 1000px){
     .descri i {
         display: block;
